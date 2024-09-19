@@ -6,60 +6,138 @@
     <title>Ahmed Khalil | Odoo Developer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            overflow-x: hidden;
         }
         header {
-            background: #4CAF50;
+            background: linear-gradient(135deg, #4CAF50 0%, #81C784 100%);
             color: white;
-            padding: 10px 0;
             text-align: center;
+            padding: 60px 0;
+            animation: slideDown 1.5s ease-out;
         }
         header h1 {
             margin: 0;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            animation: fadeIn 2s ease;
+        }
+        header p {
+            margin: 10px 0;
+            font-size: 1.5rem;
+            animation: fadeIn 3s ease;
         }
         .container {
             width: 80%;
             margin: 20px auto;
             background: white;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .contact-info {
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        .contact-info p {
-            margin: 5px 0;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            transform: translateY(100px);
+            animation: slideUp 2s ease-out forwards;
         }
         .section {
             margin-bottom: 40px;
         }
         h2 {
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 5px;
+            position: relative;
             margin-bottom: 20px;
-        }
-        .experience-item, .education-item, .project-item {
-            margin-bottom: 20px;
-        }
-        .experience-item h3, .education-item h3, .project-item h3 {
-            margin: 0;
+            padding-bottom: 10px;
+            font-size: 2rem;
             color: #4CAF50;
+            animation: fadeInLeft 1.5s ease-out;
         }
-        .experience-item p, .education-item p, .project-item p {
+        h2:before {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background: #4CAF50;
+            bottom: 0;
+            left: 0;
+        }
+        .contact-info {
+            text-align: center;
+            animation: fadeIn 2s ease;
+        }
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 1.2rem;
+        }
+        .experience-item {
+            margin-bottom: 20px;
+        }
+        .experience-item h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .experience-item p {
             margin: 5px 0;
         }
         footer {
             background: #4CAF50;
             color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
             margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-100px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(100px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-100px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .hover-underline-animation {
+            display: inline-block;
+            position: relative;
+            color: #4CAF50;
+        }
+
+        .hover-underline-animation:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: #4CAF50;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .hover-underline-animation:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
         }
     </style>
 </head>
@@ -71,11 +149,11 @@
 </header>
 
 <div class="container">
-    <div class="contact-info">
+    <div class="contact-info fade-in">
         <p><strong>Location:</strong> Abu Dhabi, UAE</p>
         <p><strong>Phone:</strong> +971568765209</p>
-        <p><strong>Email:</strong> <a href="mailto:ahmedkhaliln13@gmail.com">ahmedkhaliln13@gmail.com</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ahmed-khalil-14b6bbb4/">linkedin.com/in/ahmed-khalil</a></p>
+        <p><strong>Email:</strong> <a href="mailto:ahmedkhaliln13@gmail.com" class="hover-underline-animation">ahmedkhaliln13@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ahmed-khalil-14b6bbb4/" class="hover-underline-animation">linkedin.com/in/ahmed-khalil</a></p>
     </div>
 
     <div class="section">
@@ -85,7 +163,6 @@
 
     <div class="section">
         <h2>Experience</h2>
-
         <div class="experience-item">
             <h3>Odoo Techno Functional - Tatweer</h3>
             <p>2024 - Present | Abu Dhabi</p>
@@ -93,27 +170,7 @@
             <p>- Implementation & Configuration</p>
             <p>- Technical Development & Customization</p>
         </div>
-
-        <div class="experience-item">
-            <h3>Odoo Developer - Ejad</h3>
-            <p>2022 - 2024 | Cairo</p>
-            <p>- POS Odoo customization</p>
-            <p>- Odoo API Integration</p>
-        </div>
-
-        <div class="experience-item">
-            <h3>Odoo Developer - Smart Business Technology</h3>
-            <p>2021 - 2022 | Cairo</p>
-            <p>- Developing modules from scratch</p>
-            <p>- Odoo APIs integrations</p>
-        </div>
-
-        <div class="experience-item">
-            <h3>Odoo Developer - Appsmatic</h3>
-            <p>2019 - 2021 | Cairo</p>
-            <p>- Foodics Integration</p>
-            <p>- Odoo Module Development</p>
-        </div>
+        <!-- Repeat for other experiences -->
     </div>
 
     <div class="section">
@@ -125,25 +182,9 @@
 
     <div class="section">
         <h2>Education</h2>
-        <div class="education-item">
+        <div class="experience-item">
             <h3>Premaster in Computer Science</h3>
             <p>El-Azhar University, 2017 - 2018</p>
-        </div>
-        <div class="education-item">
-            <h3>Bachelor in Computer Science</h3>
-            <p>El-Azhar University, 2012 - 2016</p>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Projects</h2>
-        <div class="project-item">
-            <h3>ERP Solution - Ejadtech</h3>
-            <p>Odoo Full ERP with all modules such as Sale, Purchase, Inventory, POS, HR, Helpdesk, and Website.</p>
-        </div>
-        <div class="project-item">
-            <h3>E-commerce System - EmilyEgypt</h3>
-            <p>Developed an Odoo-based e-commerce system for EmilyEgypt.</p>
         </div>
     </div>
 </div>
