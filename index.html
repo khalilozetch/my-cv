@@ -3,141 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Khalil | Odoo Developer</title>
+    <title>Ahmed Khalil | Odoo Techno-Functional Consultant</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: #f9f9f9;
             color: #333;
-            overflow-x: hidden;
         }
         header {
             background: linear-gradient(135deg, #003366 0%, #005c99 100%);
             color: white;
             text-align: center;
-            padding: 60px 0;
-            animation: slideDown 1.5s ease-out;
+            padding: 60px 20px;
         }
         header h1 {
-            margin: 0;
             font-size: 3rem;
-            letter-spacing: 2px;
-            animation: fadeIn 2s ease;
+            margin: 0;
         }
         header p {
-            margin: 10px 0;
+            margin-top: 10px;
             font-size: 1.5rem;
-            animation: fadeIn 3s ease;
         }
         .container {
-            width: 80%;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
             border-radius: 10px;
-            transform: translateY(100px);
-            animation: slideUp 2s ease-out forwards;
-        }
-        .section {
-            margin-bottom: 40px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
         }
         h2 {
-            position: relative;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            font-size: 2rem;
             color: #005c99;
-            animation: fadeInLeft 1.5s ease-out;
+            border-bottom: 2px solid #005c99;
+            padding-bottom: 5px;
+            margin-top: 40px;
         }
-        h2:before {
-            content: "";
-            position: absolute;
-            width: 60px;
-            height: 4px;
-            background: #005c99;
-            bottom: 0;
-            left: 0;
-        }
-        .contact-info {
-            text-align: center;
-            animation: fadeIn 2s ease;
-        }
-        .contact-info p {
-            margin: 5px 0;
-            font-size: 1.2rem;
-        }
-        .experience-item {
-            margin-bottom: 20px;
-        }
-        .experience-item h3 {
-            margin: 0;
-            font-size: 1.5rem;
-            color: #333;
-        }
-        .experience-item p {
-            margin: 5px 0;
+        .section p, .section ul {
+            margin: 10px 0;
         }
         footer {
             background: #003366;
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 20px;
             margin-top: 40px;
         }
-        footer p {
-            margin: 0;
+        ul {
+            list-style: none;
+            padding-left: 20px;
         }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes fadeInLeft {
-            from { opacity: 0; transform: translateX(-100px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(100px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-100px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .fade-in {
-            animation: fadeIn 1.5s ease-out;
-        }
-
-        .hover-underline-animation {
-            display: inline-block;
-            position: relative;
+        ul li::before {
+            content: "\2022";
             color: #005c99;
-        }
-
-        .hover-underline-animation:after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            transform: scaleX(0);
-            height: 3px;
-            bottom: 0;
-            left: 0;
-            background-color: #005c99;
-            transform-origin: bottom right;
-            transition: transform 0.25s ease-out;
-        }
-
-        .hover-underline-animation:hover:after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
         }
     </style>
 </head>
@@ -145,85 +69,75 @@
 
 <header>
     <h1>Ahmed Khalil</h1>
-    <p>Odoo & Python Developer  </p>
+    <p>Odoo Techno-Functional Consultant | Python Developer | Odoo Certified</p>
 </header>
 
 <div class="container">
-    <div class="contact-info fade-in">
+    <div class="section">
+        <h2>Contact</h2>
         <p><strong>Location:</strong> Abu Dhabi, UAE</p>
         <p><strong>Phone:</strong> +971568765209</p>
-        <p><strong>Email:</strong> <a href="mailto:ahmedkhaliln13@gmail.com" class="hover-underline-animation">ahmedkhaliln13@gmail.com</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ahmed-khalil-14b6bbb4/" class="hover-underline-animation">linkedin.com/in/ahmed-khalil</a></p>
+        <p><strong>Email:</strong> <a href="mailto:ahmedkhaliln13@gmail.com">ahmedkhaliln13@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ahmed-khalil-14b6bbb4/">linkedin.com/in/ahmed-khalil-14b6bbb4</a></p>
     </div>
 
     <div class="section">
         <h2>Summary</h2>
-        <p>With over 6 years of dedicated experience as an Odoo Developer and Implementation Specialist, I bring a robust blend of technical and functional expertise to optimize and enhance business processes through effective ERP solutions. My career includes successful end-to-end Odoo ERP implementations, customizations, and integrations, ensuring peak business efficiency.</p>
+        <p>With over 7 years of experience as an Odoo Developer and Implementation Specialist, I combine strong technical and functional expertise to deliver optimized ERP solutions. I have led full-cycle Odoo implementations, customized modules to meet complex business needs, and integrated systems to ensure operational excellence. Skilled in translating business requirements into scalable solutions, providing user training, and offering continuous support to maximize ERP value.</p>
     </div>
 
     <div class="section">
         <h2>Experience</h2>
-        <div class="experience-item">
-            <h3>Odoo Techno Functional - Tatweer</h3>
-            <p>2024 - Present | Abu Dhabi</p>
-            <p>- Requirement Analysis & Documentation</p>
-            <p>- Implementation & Configuration</p>
-            <p>- Technical Development & Customization</p>
-            <p>- User Training & Support</p>
-        </div>
-
-        <div class="experience-item">
-            <h3>Odoo Developer - Ejad</h3>
-            <p>2022 - 2024 | Cairo</p>
-            <p>- POS Odoo customization</p>
-            <p>- Odoo API Integration</p>
-            <p>- Development in Inventory, Sales, Purchase, and more</p>
-        </div>
-
-        <div class="experience-item">
-            <h3>Odoo Developer - Smart Business Technology</h3>
-            <p>2021 - 2022 | Cairo</p>
-            <p>- Developing modules from scratch</p>
-            <p>- Odoo APIs integrations</p>
-        </div>
-
-        <div class="experience-item">
-            <h3>Odoo Developer - Appsmatic</h3>
-            <p>2019 - 2021 | Cairo</p>
-            <p>- Foodics Integration</p>
-            <p>- Odoo Module Development</p>
-        </div>
+        <ul>
+            <li><strong>Odoo Techno-Functional Consultant - Tatweer</strong> (2024-Present, Abu Dhabi)</li>
+            <li><strong>Odoo Developer - Ejad</strong> (2022-2024, Cairo)</li>
+            <li><strong>Odoo Developer - Smart Business Technology</strong> (2021-2022, Cairo)</li>
+            <li><strong>Odoo Developer - Appsmatic</strong> (2019-2021, Cairo)</li>
+            <li><strong>Odoo Developer - G2M</strong> (2021, Part-time)</li>
+            <li><strong>Odoo Developer - Linked Gates</strong> (2018-2019, Cairo)</li>
+            <li><strong>Odoo Developer - MTI</strong> (2020, Part-time)</li>
+            <li><strong>Freelance Projects</strong> (2018-Present)</li>
+            <li><strong>Officer at Armed Forces</strong> (2016-2019, Ismaelia)</li>
+        </ul>
     </div>
 
     <div class="section">
         <h2>Skills</h2>
-        <p><strong>Programming Languages:</strong> Python, Java, PHP, C++, C, Linux, Bash Script</p>
-        <p><strong>Frameworks:</strong> Odoo, Android</p>
-        <p><strong>Markup Languages:</strong> HTML, XML, JavaScript, CSS</p>
-    </div>
-
-    <div class="section">
-        <h2>Education</h2>
-        <div class="experience-item">
-            <h3>Premaster in Computer Science</h3>
-            <p>El-Azhar University, 2017 - 2018</p>
-        </div>
-        <div class="experience-item">
-            <h3>Bachelor in Computer Science</h3>
-            <p>El-Azhar University, 2012 - 2016</p>
-        </div>
+        <ul>
+            <li><strong>Programming Languages:</strong> Python, Java, PHP, C++, C, Linux, Bash Script</li>
+            <li><strong>Frameworks:</strong> Odoo, Android</li>
+            <li><strong>Markup Languages:</strong> HTML, XML, JavaScript, CSS</li>
+            <li><strong>Version Controls:</strong> Git, GitHub, GitLab</li>
+            <li><strong>Personal Skills:</strong> Teamwork, Leadership, Communication, Problem Solving, Learning Ability</li>
+        </ul>
     </div>
 
     <div class="section">
         <h2>Projects</h2>
-        <div class="experience-item">
-            <h3>ERP Solution - Ejadtech</h3>
-            <p>Odoo Full ERP with all modules such as Sale, Purchase, Inventory, POS, HR, Helpdesk, and Website.</p>
-        </div>
-        <div class="experience-item">
-            <h3>E-commerce System - EmilyEgypt</h3>
-            <p>Developed an Odoo-based e-commerce system for EmilyEgypt.</p>
-        </div>
+        <ul>
+            <li>ERP Solution - Ejadtech (Full ERP Suite: Sales, Purchase, Inventory, POS, HR, Helpdesk, Website)</li>
+            <li>MWAN Project - National Center for Waste Management, Saudi Arabia (https://mwan.gov.sa)</li>
+            <li>E-commerce Systems - EmilyEgypt (https://emeliegypt.com)</li>
+            <li>Foodics Integration - Appsmatic</li>
+            <li>Scada Manufacturing Management System</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <ul>
+            <li>Premaster in Computer Science - El-Azhar University (2017-2018)</li>
+            <li>Bachelor in Computer Science - El-Azhar University (2012-2016)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Courses & Certifications</h2>
+        <ul>
+            <li>Mastering Odoo 9 Development (Udemy)</li>
+            <li>Bootcamp Python Course (Udemy)</li>
+            <li>Android Developer Course (Google & Udacity, AUC)</li>
+        </ul>
     </div>
 </div>
 
